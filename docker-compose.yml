@@ -1,0 +1,21 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: senter-db
+    environment:
+      POSTGRES_USER: senter
+      POSTGRES_PASSWORD: senter123
+      POSTGRES_DB: senter_db
+      TZ: Africa/Cairo
+    ports:
+      - "5432:5432"
+    volumes:
+      - senter_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U senter -d senter_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  senter_pgdata:
