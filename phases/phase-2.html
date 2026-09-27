@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المرحلة 2 — المالية | SENTER</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo">SENTER <span>| نظام إدارة السناتر</span></a>
+      <nav class="nav">
+        <a href="../index.html">الرئيسية</a>
+        <a href="phase-1.html">المرحلة 1</a>
+        <a href="phase-2.html" class="active">المرحلة 2</a>
+        <a href="phase-3.html">المرحلة 3</a>
+        <a href="phase-4.html">المرحلة 4</a>
+        <a href="phase-5.html">المرحلة 5</a>
+        <a href="phase-6.html">المرحلة 6</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <a href="../index.html" class="back-link">← العودة للرئيسية</a>
+
+    <div class="phase-header">
+      <span class="badge">المرحلة 2</span>
+      <h1>المالية</h1>
+      <p>الاشتراكات، المدفوعات، الخصومات، الخزائن، مستحقات المدرسين، المصروفات، والتقارير المالية</p>
+    </div>
+
+    <div class="section">
+      <h2>نطاق المرحلة</h2>
+      <ul>
+        <li>تحصيل اشتراكات الطلاب مع إيصالات فريدة وهوية السنتر</li>
+        <li>إدارة الخصومات والكوبونات (نسبة / مبلغ ثابت / صلاحية)</li>
+        <li>إدارة الخزائن (مركزية أو فرع) + حركات وتحويل وتسوية</li>
+        <li>مستحقات المدرسين (حساب تلقائي + سلف + اعتماد + صرف)</li>
+        <li>المصروفات التشغيلية مع تصنيف ومرفقات</li>
+        <li>التقارير المالية (إيرادات، مصروفات، أرباح، ديون، تحصيل)</li>
+        <li>فصل الحسابات المالية بالكامل حسب الـ Tenant</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>المتطلبات الوظيفية الرئيسية</h2>
+      <table>
+        <thead>
+          <tr><th>الرمز</th><th>المتطلب</th><th>الحالة</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>FR-060</td><td>تحصيل اشتراك طالب</td><td><span class="status">تم بالكامل</span></td></tr>
+          <tr><td>FR-061</td><td>إدارة الخصومات والكوبونات</td><td><span class="status">تم بالكامل</span></td></tr>
+          <tr><td>FR-062</td><td>إدارة الخزائن</td><td><span class="status">تم بالكامل</span></td></tr>
+          <tr><td>FR-063</td><td>مستحقات المدرسين والتسويات</td><td><span class="status">تم بالكامل</span></td></tr>
+          <tr><td>FR-064</td><td>المصروفات التشغيلية</td><td><span class="status">تم بالكامل</span></td></tr>
+          <tr><td>FR-065</td><td>التقارير المالية</td><td><span class="status">تم بالكامل</span></td></tr>
+          <tr><td>FR-066</td><td>فصل الحسابات المالية</td><td><span class="status">تم بالكامل</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section">
+      <h2>الجداول المضافة</h2>
+      <ul>
+        <li><code>subscriptions</code></li>
+        <li><code>discount_coupons</code> + <code>subscription_discounts</code></li>
+        <li><code>treasuries</code> + <code>treasury_transactions</code></li>
+        <li><code>payments</code></li>
+        <li><code>expenses</code></li>
+        <li><code>teacher_advances</code></li>
+        <li><code>teacher_payouts</code> + <code>teacher_payout_sessions</code></li>
+        <li><code>receipt_sequences</code></li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>ملفات المرحلة</h2>
+      <ul>
+        <li><code>database/schema_finance.sql</code></li>
+        <li><code>rbac/finance_permissions.sql</code></li>
+        <li><code>api/endpoints_finance.md</code></li>
+        <li><code>docs/FR_STATUS_PHASE2.md</code></li>
+        <li><code>docs/ui_screens_finance.md</code></li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="footer">SENTER — SRS v1.0 | المرحلة 2</footer>
+</body>
+</html>
